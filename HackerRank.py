@@ -91,17 +91,61 @@
 #     print(result)
 
 
-
-
-
-
 # def split_and_join(line):
-#     result = ""
-#     for char in line:
-#         result = result + "-".join(char.split())
-#     return result
+#     return "-".join(line.split())
 
 # if __name__ == '__main__':
 #     line = input()
 #     result = split_and_join(line)
 #     print(result)
+
+# def print_full_name(first, last):
+#     print(f"Hello {first} {last}! You just delved into python.")
+#     print("Hello {} {}! You just delved into python.".format(first,last))
+#     print("Hello %s %s! You just delved into python." %(first,last))
+    
+
+# if __name__ == '__main__':
+#     first_name = input()
+#     last_name = input()
+#     print_full_name(first_name, last_name)
+
+# def mutate_string(string, position, character):
+#     str = string[:position] + f"{character}" + string[position+1 :]
+#     return  str
+
+# if __name__ == '__main__':
+#     s = input()
+#     i, c = input().split()
+#     s_new = mutate_string(s, int(i), c)
+#     print(s_new)
+
+# string = "prajwal"
+# list = list(string)
+# print(dir(list))
+# list.pop()
+
+# def count_substring(string, sub_string):
+#     count = 0
+#     for i in range(len(string) - len(sub_string) + 1):
+#         if string[i:i + len(sub_string)] == sub_string:
+#             count += 1
+#     return count
+
+# if __name__ == '__main__':
+#     string = input().strip()
+#     sub_string = input().strip()
+    
+#     count = count_substring(string, sub_string)
+#     print(count)
+
+# def count_substring(string, sub_string):        .count doesnot count the overllap substring so we have to go mannual
+#     return string.count(sub_string)
+
+# if __name__ == '__main__':
+#     string = input().strip()
+#     sub_string = input().strip()
+    
+#     count = count_substring(string, sub_string)
+#     print(count)
+
